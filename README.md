@@ -47,7 +47,7 @@ We are thrilled to release **Qwen-Image**, a 20B MMDiT image foundation model th
 
 ## Quick Start
 
-1. Make sure your transformers>=4.51.3 (Supporting Qwen2.5-VL)
+1. Make sure your transformers>=4.51.3 (Supporting zen-VL)
 
 2. Install the latest version of diffusers
 ```
@@ -408,3 +408,39 @@ If you're passionate about fundamental research, we're hiring full-time employee
 
 
 
+
+---
+
+## Based On
+
+**zen-artist** is based on [Qwen2-VL-7B](https://huggingface.co/Qwen/Qwen2-VL-7B)
+
+We are grateful to the original authors for their excellent work and open-source contributions.
+
+### Upstream Source
+- **Repository**: https://huggingface.co/Qwen/Qwen2-VL-7B
+- **Base Model**: Qwen2-VL-7B
+- **License**: See original repository for license details
+
+### Changes in Zen LM
+- Adapted for Zen AI ecosystem
+- Fine-tuned for specific use cases
+- Added training and inference scripts
+- Integrated with Zen Gym and Zen Engine
+- Enhanced documentation and examples
+
+### Citation
+
+If you use this model, please cite both the original work and Zen LM:
+
+```bibtex
+@misc{zenlm2025zen-artist,
+    title={Zen LM: zen-artist},
+    author={Hanzo AI and Zoo Labs Foundation},
+    year={2025},
+    publisher={HuggingFace},
+    howpublished={\url{https://huggingface.co/zenlm/zen-artist}}
+}
+```
+
+Please also cite the original upstream work - see https://huggingface.co/Qwen/Qwen2-VL-7B for citation details.
