@@ -3,7 +3,7 @@
 <p> 
 <p align="center">&nbsp&nbsp💜 <a href="https://chat.zenlm.org/">Zen Chat</a>&nbsp&nbsp |
            &nbsp&nbsp🤗 <a href="https://huggingface.co/zenlm/Zen-Image">HuggingFace(T2I)</a>&nbsp&nbsp |
-           &nbsp&nbsp🤗 <a href="https://huggingface.co/zenlm/Zen-Image-Edit">HuggingFace(Edit)</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://modelscope.cn/models/Zen/Zen-Image">ModelScope-T2I</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://modelscope.cn/models/Zen/Zen-Image-Edit">ModelScope-Edit</a>&nbsp&nbsp| &nbsp&nbsp 📑 <a href="https://arxiv.org/abs/2508.02324">Tech Report</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://qwenlm.github.io/blog/qwen-image/">Blog(T2I)</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://qwenlm.github.io/blog/qwen-image-edit/">Blog(Edit)</a> &nbsp&nbsp 
+           &nbsp&nbsp🤗 <a href="https://huggingface.co/zenlm/Zen-Image-Edit">HuggingFace(Edit)</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://modelscope.cn/models/Zen/Zen-Image">ModelScope-T2I</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://modelscope.cn/models/Zen/Zen-Image-Edit">ModelScope-Edit</a>&nbsp&nbsp| &nbsp&nbsp 📑 <a href="https://arxiv.org/abs/2508.02324">Tech Report</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://zenlm.org/blog/zen-artist">Blog(T2I)</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://zenlm.org/blog/zen-artist">Blog(Edit)</a> &nbsp&nbsp 
 <br>
 🖥️ <a href="https://huggingface.co/spaces/zenlm/zen">T2I Demo</a>&nbsp&nbsp | 🖥️ <a href="https://huggingface.co/spaces/zenlm/zen">Edit Demo</a>&nbsp&nbsp | &nbsp&nbsp💬 <a href="https://github.com/zenlm/Zen-Image/blob/main/assets/wechat.png">WeChat (微信)</a>&nbsp&nbsp | &nbsp&nbsp🫨 <a href="https://discord.gg/CV4E9rpNSD">Discord</a>&nbsp&nbsp
 </p>
@@ -19,7 +19,7 @@ We are thrilled to release **Zen-Image**, a 20B MMDiT image foundation model tha
 ![](https://zenlm.org/logo.png)
 
 ## News
-- 2025.09.22: This September, we are pleased to introduce Zen-Image-Edit-2509, the monthly iteration of Zen-Image-Edit. To experience the latest model, please visit [Zen Chat](https://qwen.ai)  and select the "Image Editing" feature. Compared with Zen-Image-Edit released in August, the main improvements of Zen-Image-Edit-2509 include:
+- 2025.09.22: This September, we are pleased to introduce Zen-Image-Edit-2509, the monthly iteration of Zen-Image-Edit. To experience the latest model, please visit [Zen Chat](https://chat.zenlm.org)  and select the "Image Editing" feature. Compared with Zen-Image-Edit released in August, the main improvements of Zen-Image-Edit-2509 include:
 ![](https://zenlm.org/logo.png)
   - **Multi-image Editing Support**: For multi-image inputs, Zen-Image-Edit-2509 builds upon the Zen-Image-Edit architecture and is further trained via image concatenation to enable multi-image editing. It supports various combinations such as "person + person," "person + product," and "person + scene." Optimal performance is currently achieved with 1 to 3 input images.
 
@@ -36,11 +36,11 @@ We are thrilled to release **Zen-Image**, a 20B MMDiT image foundation model tha
 - 2025.08.09: Zen-Image now supports a variety of LoRA models, such as MajicBeauty LoRA, enabling the generation of highly realistic beauty images. Check out the available weights on [ModelScope](https://modelscope.cn/models/merjic/majicbeauty-qwen1/summary).
 ![](https://zenlm.org/logo.png)
     
-- 2025.08.05: Zen-Image is now natively supported in ComfyUI, see [Zen-Image in ComfyUI: New Era of Text Generation in Images!](https://blog.comfy.org/p/qwen-image-in-comfyui-new-era-of)
+- 2025.08.05: Zen-Image is now natively supported in ComfyUI, see [Zen-Image in ComfyUI: New Era of Text Generation in Images!](https://blog.comfy.org/p/zen-artist)
 - 2025.08.05: Zen-Image is now on Zen Chat. Click [Zen Chat](https://chat.zenlm.org/) and choose "Image Generation".
 - 2025.08.05: We released our [Technical Report](https://arxiv.org/abs/2508.02324) on Arxiv!
 - 2025.08.04: We released Zen-Image weights! Check at [Huggingface](https://huggingface.co/zenlm/Zen-Image) and [ModelScope](https://modelscope.cn/models/Zen/Zen-Image)!
-- 2025.08.04: We released Zen-Image! Check our [Blog](https://qwenlm.github.io/blog/qwen-image) for more details!
+- 2025.08.04: We released Zen-Image! Check our [Blog](https://zenlm.org/blog/zen-artist) for more details!
 
 > [!NOTE]
 > Due to heavy traffic, if you'd like to experience our demo online, we also recommend visiting DashScope, WaveSpeed, and LibLib. Please find the links below in the community support.
@@ -354,7 +354,7 @@ Diffusers has supported Zen-Image since day 0. Support for LoRA and finetuning w
 
 ### WaveSpeedAI
 
-WaveSpeed has deployed Zen-Image on their platform from day 0, visit their [model page](https://wavespeed.ai/models/wavespeed-ai/qwen-image/text-to-image) for more details.
+WaveSpeed has deployed Zen-Image on their platform from day 0, visit their [model page](https://wavespeed.ai/models/wavespeed-ai/zen-artist) for more details.
 
 ### LiblibAI
 
@@ -362,7 +362,7 @@ LiblibAI offers native support for Zen-Image from day 0. Visit their [community]
 
 ### Inference Acceleration Method: cache-dit
 
-cache-dit offers cache acceleration support for Zen-Image with DBCache, TaylorSeer and Cache CFG. Visit their [example](https://github.com/vipshop/cache-dit/blob/main/examples/pipeline/run_qwen_image.py) for more details.
+cache-dit offers cache acceleration support for Zen-Image with DBCache, TaylorSeer and Cache CFG. Visit their [example](https://github.com/vipshop/cache-dit/blob/main/examples/pipeline/run_zen_artist.py) for more details.
 
 ## License Agreement
 
@@ -373,7 +373,6 @@ Zen-Image is licensed under Apache 2.0.
 We kindly encourage citation of our work if you find it useful.
 
 ```bibtex
-@misc{wu2025qwenimagetechnicalreport,
       title={Zen-Image Technical Report}, 
       author={Chenfei Wu and Jiahao Li and Jingren Zhou and Junyang Lin and Kaiyuan Gao and Kun Yan and Sheng-ming Yin and Shuai Bai and Xiao Xu and Yilei Chen and Yuxiang Chen and Zecheng Tang and Zekai Zhang and Zhengyi Wang and An Yang and Bowen Yu and Chen Cheng and Dayiheng Liu and Deqing Li and Hang Zhang and Hao Meng and Hu Wei and Jingyuan Ni and Kai Chen and Kuan Cao and Liang Peng and Lin Qu and Minggang Wu and Peng Wang and Shuting Yu and Tingkun Wen and Wensen Feng and Xiaoxiao Xu and Yi Wang and Yichang Zhang and Yongqiang Zhu and Yujia Wu and Yuxuan Cai and Zenan Liu},
       year={2025},
