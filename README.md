@@ -33,7 +33,7 @@ We are thrilled to release **Zen-Image**, a 20B MMDiT image foundation model tha
 
 - 2025.08.19: We have observed performance misalignments of Zen-Image-Edit. To ensure optimal results, please update to the latest diffusers commit. Improvements are expected, especially in identity preservation and instruction following.
 - 2025.08.18: We’re excited to announce the open-sourcing of Zen-Image-Edit! 🎉 Try it out in your local environment with the quick start guide below, or head over to [Zen Chat](https://chat.zenlm.org/) or [Huggingface Demo](https://huggingface.co/spaces/zenlm/zen) to experience the online demo right away! If you enjoy our work, please show your support by giving our repository a star. Your encouragement means a lot to us!
-- 2025.08.09: Zen-Image now supports a variety of LoRA models, such as MajicBeauty LoRA, enabling the generation of highly realistic beauty images. Check out the available weights on [ModelScope](https://modelscope.cn/models/merjic/majicbeauty-qwen1/summary).
+- 2025.08.09: Zen-Image now supports a variety of LoRA models, such as MajicBeauty LoRA, enabling the generation of highly realistic beauty images. Check out the available weights on [ModelScope](https://modelscope.cn/models/merjic/majicbeauty-zen/summary).
 ![](https://zenlm.org/logo.png)
     
 - 2025.08.05: Zen-Image is now natively supported in ComfyUI, see [Zen-Image in ComfyUI: New Era of Text Generation in Images!](https://blog.comfy.org/p/zen-artist)
