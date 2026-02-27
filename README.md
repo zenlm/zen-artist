@@ -3,9 +3,9 @@
 <p> 
 <p align="center">&nbsp&nbsp💜 <a href="https://chat.zenlm.org/">Zen Chat</a>&nbsp&nbsp |
            &nbsp&nbsp🤗 <a href="https://huggingface.co/zenlm/Zen-Image">HuggingFace(T2I)</a>&nbsp&nbsp |
-           &nbsp&nbsp🤗 <a href="https://huggingface.co/zenlm/Zen-Image-Edit">HuggingFace(Edit)</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://modelscope.cn/models/Zen/Zen-Image">ModelScope-T2I</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://modelscope.cn/models/Zen/Zen-Image-Edit">ModelScope-Edit</a>&nbsp&nbsp| &nbsp&nbsp 📑 <a href="https://arxiv.org/abs/2508.02324">Tech Report</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://zenlm.org/blog/zen-artist">Blog(T2I)</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://zenlm.org/blog/zen-artist">Blog(Edit)</a> &nbsp&nbsp 
+           &nbsp&nbsp🤗 <a href="https://huggingface.co/zenlm/Zen-Image-Edit">HuggingFace(Edit)</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/abs/2508.02324">Tech Report</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://zenlm.org/blog/zen-artist">Blog(T2I)</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://zenlm.org/blog/zen-artist">Blog(Edit)</a> &nbsp&nbsp
 <br>
-🖥️ <a href="https://huggingface.co/spaces/zenlm/zen">T2I Demo</a>&nbsp&nbsp | 🖥️ <a href="https://huggingface.co/spaces/zenlm/zen">Edit Demo</a>&nbsp&nbsp | &nbsp&nbsp💬 <a href="https://github.com/zenlm/Zen-Image/blob/main/assets/wechat.png">WeChat (微信)</a>&nbsp&nbsp | &nbsp&nbsp🫨 <a href="https://discord.gg/CV4E9rpNSD">Discord</a>&nbsp&nbsp
+🖥️ <a href="https://huggingface.co/spaces/zenlm/zen">T2I Demo</a>&nbsp&nbsp | 🖥️ <a href="https://huggingface.co/spaces/zenlm/zen">Edit Demo</a>&nbsp&nbsp | &nbsp&nbsp🫨 <a href="https://discord.gg/CV4E9rpNSD">Discord</a>&nbsp&nbsp
 </p>
 
 <p align="center">
@@ -33,17 +33,14 @@ We are thrilled to release **Zen-Image**, a 20B MMDiT image foundation model tha
 
 - 2025.08.19: We have observed performance misalignments of Zen-Image-Edit. To ensure optimal results, please update to the latest diffusers commit. Improvements are expected, especially in identity preservation and instruction following.
 - 2025.08.18: We’re excited to announce the open-sourcing of Zen-Image-Edit! 🎉 Try it out in your local environment with the quick start guide below, or head over to [Zen Chat](https://chat.zenlm.org/) or [Huggingface Demo](https://huggingface.co/spaces/zenlm/zen) to experience the online demo right away! If you enjoy our work, please show your support by giving our repository a star. Your encouragement means a lot to us!
-- 2025.08.09: Zen-Image now supports a variety of LoRA models, such as MajicBeauty LoRA, enabling the generation of highly realistic beauty images. Check out the available weights on [ModelScope](https://modelscope.cn/models/merjic/majicbeauty-zen/summary).
+- 2025.08.09: Zen-Image now supports a variety of LoRA models, such as MajicBeauty LoRA, enabling the generation of highly realistic beauty images.
 ![](https://zenlm.org/logo.png)
     
 - 2025.08.05: Zen-Image is now natively supported in ComfyUI, see [Zen-Image in ComfyUI: New Era of Text Generation in Images!](https://blog.comfy.org/p/zen-artist)
 - 2025.08.05: Zen-Image is now on Zen Chat. Click [Zen Chat](https://chat.zenlm.org/) and choose "Image Generation".
 - 2025.08.05: We released our [Technical Report](https://arxiv.org/abs/2508.02324) on Arxiv!
-- 2025.08.04: We released Zen-Image weights! Check at [Huggingface](https://huggingface.co/zenlm/Zen-Image) and [ModelScope](https://modelscope.cn/models/Zen/Zen-Image)!
+- 2025.08.04: We released Zen-Image weights! Check at [Huggingface](https://huggingface.co/zenlm/Zen-Image)!
 - 2025.08.04: We released Zen-Image! Check our [Blog](https://zenlm.org/blog/zen-artist) for more details!
-
-> [!NOTE]
-> Due to heavy traffic, if you'd like to experience our demo online, we also recommend visiting DashScope, WaveSpeed, and LibLib. Please find the links below in the community support.
 
 ## Quick Start
 
@@ -208,7 +205,7 @@ Alternatively, run the example script from the command line:
 
 ```bash
 cd src
-DASHSCOPE_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx python examples/generate_w_prompt_enhance.py
+ZEN_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx python examples/generate_w_prompt_enhance.py
 ```
 
 #### Prompt Enhance for Image Edit
@@ -243,7 +240,7 @@ export TASK_TIMEOUT=300           # Task timeout in seconds
 ```bash
 # Start the gradio demo server, api key for prompt enhance
 cd src
-DASHSCOPE_API_KEY=sk-xxxxxxxxxxxxxxxxx python examples/demo.py 
+ZEN_API_KEY=sk-xxxxxxxxxxxxxxxxx python examples/demo.py
 ```
 
 
@@ -327,38 +324,11 @@ The above summarizes the main enhancements in this update. We hope you enjoy usi
 
 
 
-## AI Arena
-
-To comprehensively evaluate the general image generation capabilities of Zen-Image and objectively compare it with state-of-the-art closed-source APIs, we introduce [AI Arena](https://aiarena.zenlm-inc.com), an open benchmarking platform built on the Elo rating system. AI Arena provides a fair, transparent, and dynamic environment for model evaluation.
-
-In each round, two images—generated by randomly selected models from the same prompt—are anonymously presented to users for pairwise comparison. Users vote for the better image, and the results are used to update both personal and global leaderboards via the Elo algorithm, enabling developers, researchers, and the public to assess model performance in a robust and data-driven way. AI Arena is now publicly available, welcoming everyone to participate in model evaluations. 
-
-![AI Arena](https://zenlm.org/logo.png)
-
-The latest leaderboard rankings can be viewed at [AI Arena Learboard](https://aiarena.zenlm-inc.com/corpora/arena/leaderboard?arenaType=text2image).
-
-If you wish to deploy your model on AI Arena and participate in the evaluation, please contact weiyue.wy@zenlm-inc.com.
-
 ## Community Support
 
 ### Huggingface
 
 Diffusers has supported Zen-Image since day 0. Support for LoRA and finetuning workflows is currently in development and will be available soon.
-
-### ModelScope
-* **[DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio)** provides comprehensive support for Zen-Image, including low-GPU-memory layer-by-layer offload (inference within 4GB VRAM), FP8 quantization, LoRA / full training.
-* **[DiffSynth-Engine](https://github.com/modelscope/DiffSynth-Engine)** delivers advanced optimizations for Zen-Image inference and deployment, including FBCache-based acceleration, classifier-free guidance (CFG) parallel, and more.
-* **[ModelScope AIGC Central](https://www.modelscope.cn/aigc)** provides hands-on experiences on Zen Image, including: 
-    - [Image Generation](https://www.modelscope.cn/aigc/imageGeneration): Generate high fidelity images using the Zen Image model.
-    - [LoRA Training](https://www.modelscope.cn/aigc/modelTraining): Easily train Zen Image LoRAs for personalized concepts.
-
-### WaveSpeedAI
-
-WaveSpeed has deployed Zen-Image on their platform from day 0, visit their [model page](https://wavespeed.ai/models/wavespeed-ai/zen-artist) for more details.
-
-### LiblibAI
-
-LiblibAI offers native support for Zen-Image from day 0. Visit their [community](https://www.liblib.art/modelinfo/c62a103bd98a4246a2334e2d952f7b21?from=sd&versionUuid=75e0be0c93b34dd8baeec9c968013e0c) page for more details and discussions.
 
 ### Inference Acceleration Method: cache-dit
 
@@ -387,11 +357,9 @@ We kindly encourage citation of our work if you find it useful.
 ## Contact and Join Us
 
 
-If you'd like to get in touch with our research team, we'd love to hear from you! Join our [Discord](https://discord.gg/z3GAxXZ9Ce) or scan the QR code to connect via our [WeChat groups](assets/wechat.png) — we're always open to discussion and collaboration.
+If you'd like to get in touch with our research team, we'd love to hear from you! Join our [Discord](https://discord.gg/z3GAxXZ9Ce) — we're always open to discussion and collaboration.
 
-If you have questions about this repository, feedback to share, or want to contribute directly, we welcome your issues and pull requests on GitHub. Your contributions help make Zen-Image better for everyone. 
-
-If you're passionate about fundamental research, we're hiring full-time employees (FTEs) and research interns. Don't wait — reach out to us at fulai.hr@zenlm-inc.com
+If you have questions about this repository, feedback to share, or want to contribute directly, we welcome your issues and pull requests on GitHub. Your contributions help make Zen-Image better for everyone.
 
 ## Star History
 
