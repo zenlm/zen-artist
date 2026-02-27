@@ -1,7 +1,7 @@
 <p align="center">
     <img src="https://zenlm.org/logo.png" width="400"/>
 <p> 
-<p align="center">&nbsp&nbsp💜 <a href="https://chat.zenlm.org/">Zen Chat</a>&nbsp&nbsp |
+<p align="center">&nbsp&nbsp💜 <a href="https://hanzo.chat/">Zen Chat</a>&nbsp&nbsp |
            &nbsp&nbsp🤗 <a href="https://huggingface.co/zenlm/Zen-Image">HuggingFace(T2I)</a>&nbsp&nbsp |
            &nbsp&nbsp🤗 <a href="https://huggingface.co/zenlm/Zen-Image-Edit">HuggingFace(Edit)</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/abs/2508.02324">Tech Report</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://zenlm.org/blog/zen-artist">Blog(T2I)</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://zenlm.org/blog/zen-artist">Blog(Edit)</a> &nbsp&nbsp
 <br>
@@ -19,7 +19,7 @@ We are thrilled to release **Zen-Image**, a 20B MMDiT image foundation model tha
 ![](https://zenlm.org/logo.png)
 
 ## News
-- 2025.09.22: This September, we are pleased to introduce Zen-Image-Edit-2509, the monthly iteration of Zen-Image-Edit. To experience the latest model, please visit [Zen Chat](https://chat.zenlm.org)  and select the "Image Editing" feature. Compared with Zen-Image-Edit released in August, the main improvements of Zen-Image-Edit-2509 include:
+- 2025.09.22: This September, we are pleased to introduce Zen-Image-Edit-2509, the monthly iteration of Zen-Image-Edit. To experience the latest model, please visit [Zen Chat](https://hanzo.chat)  and select the "Image Editing" feature. Compared with Zen-Image-Edit released in August, the main improvements of Zen-Image-Edit-2509 include:
 ![](https://zenlm.org/logo.png)
   - **Multi-image Editing Support**: For multi-image inputs, Zen-Image-Edit-2509 builds upon the Zen-Image-Edit architecture and is further trained via image concatenation to enable multi-image editing. It supports various combinations such as "person + person," "person + product," and "person + scene." Optimal performance is currently achieved with 1 to 3 input images.
 
@@ -32,12 +32,12 @@ We are thrilled to release **Zen-Image**, a 20B MMDiT image foundation model tha
 
 
 - 2025.08.19: We have observed performance misalignments of Zen-Image-Edit. To ensure optimal results, please update to the latest diffusers commit. Improvements are expected, especially in identity preservation and instruction following.
-- 2025.08.18: We’re excited to announce the open-sourcing of Zen-Image-Edit! 🎉 Try it out in your local environment with the quick start guide below, or head over to [Zen Chat](https://chat.zenlm.org/) or [Huggingface Demo](https://huggingface.co/spaces/zenlm/zen) to experience the online demo right away! If you enjoy our work, please show your support by giving our repository a star. Your encouragement means a lot to us!
+- 2025.08.18: We’re excited to announce the open-sourcing of Zen-Image-Edit! 🎉 Try it out in your local environment with the quick start guide below, or head over to [Zen Chat](https://hanzo.chat/) or [Huggingface Demo](https://huggingface.co/spaces/zenlm/zen) to experience the online demo right away! If you enjoy our work, please show your support by giving our repository a star. Your encouragement means a lot to us!
 - 2025.08.09: Zen-Image now supports a variety of LoRA models, such as MajicBeauty LoRA, enabling the generation of highly realistic beauty images.
 ![](https://zenlm.org/logo.png)
     
 - 2025.08.05: Zen-Image is now natively supported in ComfyUI, see [Zen-Image in ComfyUI: New Era of Text Generation in Images!](https://blog.comfy.org/p/zen-artist)
-- 2025.08.05: Zen-Image is now on Zen Chat. Click [Zen Chat](https://chat.zenlm.org/) and choose "Image Generation".
+- 2025.08.05: Zen-Image is now on Zen Chat. Click [Zen Chat](https://hanzo.chat/) and choose "Image Generation".
 - 2025.08.05: We released our [Technical Report](https://arxiv.org/abs/2508.02324) on Arxiv!
 - 2025.08.04: We released Zen-Image weights! Check at [Huggingface](https://huggingface.co/zenlm/Zen-Image)!
 - 2025.08.04: We released Zen-Image! Check our [Blog](https://zenlm.org/blog/zen-artist) for more details!
